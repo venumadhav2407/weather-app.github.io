@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./assets/weather.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <div class="container"  id="main">
+      <div id="darkmode">
+        <button onclick="darkmode()" id="sunny">
+          <i class="material-icons">wb_sunny</i>
+      </div>
+      <div class="logo">
+        <img src="./assets/weather.png" alt="Logo" width="100" />
+        <h1>Weather App</h1>
+      </div>
+
+      <!-- <button type="button" id="btn"><span id="spin">&#8635;</span></button> -->
+      <div class="val-container">
+        <input type="text" placeholder="Enter the City..." id="cityname" />
+      </div>
+      <p id="error" hidden>kbkjbj</p>
+      <h2><span id="city"></span></h2>
+      <div class="weather-info">
+        <div class="des">
+          <p>
+            <strong>Description:</strong> <span id="description"></span
+            ><img
+              src=""
+              width="50"
+              height="50"
+              id="icon"
+              style="float: right"
+              hidden
+            />
+          </p>
+        </div>
+        <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+        <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+        <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

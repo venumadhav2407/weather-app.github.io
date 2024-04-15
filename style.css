@@ -1,0 +1,193 @@
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    user-select: none;
+}
+
+.container {
+    max-width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+.logo img{
+    transition: all .3s ease-in-out;
+}
+
+.logo img:hover{
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+/* DarkMode btn */
+
+#darkmode button { 
+    position: relative;
+    top: 10px;
+    right: 10px;
+    float: right;
+    color: #f0e43b;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.dark-mode {
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-container{
+    color: white;
+    background-color: rgb(109, 106, 106);
+    transition: all 0.3s ease-in-out;
+}
+
+#darkmode .btn{
+    color: black;
+}
+
+
+/* city name */
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: #808080;
+    padding: 20px;
+    border-left: 5px solid  #0de2b4;
+    border-radius: 15px;
+    color: #0de2b4;
+    text-transform: capitalize;
+}
+h2::before{
+    content: "City: ";
+    color: #fff;
+    font-weight: bold;
+
+}
+
+input[type=text]{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+   background-color: #16ac8b;
+   border: none;
+   margin-bottom: 10px;
+   box-shadow: 0 0 10px rgba(4, 177, 148, 0.3);
+}
+
+input[type=text]:focus{
+    outline: none;
+}
+
+input[type=text]::placeholder{
+    color: #fff;
+}
+
+.val-container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+/* button{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color: #fff;
+    background-color: #0de2b4;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+button:hover{
+    background-color: #000;
+    color: #fff;
+} */
+
+/* #spin{
+    display: inline-block;
+    animation: spin 0.5s ease-in-out ;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+
+
+.weather-info p {
+    margin-bottom: 10px;
+    background-color: #808080;
+    padding: 20px;
+    color: #fff;
+    border-left: 5px solid #0de2b4;
+    border-radius: 15px;
+    
+}
+
+.weather-info p span {
+    font-weight: bold;
+    color: #0de2b4;
+}
+
+.weather-info p:last-child {
+    margin-bottom: 0;
+}
+
+.des{
+    display: flex;
+}
+.des p{
+    flex-grow: 1;
+}
+
+.des #icon{
+    background-color: rgb(177, 173, 173);
+    border-radius: 50%;
+}
+
+
+/* Error */
+#error {
+    text-align: center;
+    padding: 15px;
+    color: rgb(224, 56, 56);
+    background-color: lightcoral;
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(224, 56, 56, .3);
+}
